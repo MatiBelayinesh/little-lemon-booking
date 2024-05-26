@@ -1,0 +1,16 @@
+// src/BookingForm.js (Update)
+<form onSubmit={handleSubmit} aria-label="Booking Form">
+  ...
+  <div>
+    <label htmlFor="name">Name:</label>
+    <input
+      id="name"
+      type="text"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      aria-required="true"
+    />
+    {errors.name && <span role="alert">{errors.name}</span>}
+  </div>
+  ...
+</form>
